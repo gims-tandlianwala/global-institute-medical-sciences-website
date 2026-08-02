@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Applied before first paint to avoid a flash of the wrong
+      // theme. GIMS defaults to the standard white + blue theme;
+      // this only switches to dark if the visitor chose it before.
+      (function () {
+        try {
+          if (localStorage.getItem("gims-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>
+      Global Institute of Medical Sciences &amp; Computer College — Tandlianwala
+    </title>
+    <meta
+      name="description"
+      content="Tandlianwala's only registered institute for medical, paramedical and computer education. Admissions open for LHV, CNA, CMW, Pharmacy Technician, Medical Technology and Computer/IT courses."
+    />
+    <link rel="icon" href="images/logo-real.jpg" type="image/jpeg" />
+
+    <link rel="canonical" href="https://www.gimstandlianwala.edu.pk/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Global Institute of Medical Sciences & Computer College" />
+    <meta property="og:title" content="Global Institute of Medical Sciences & Computer College — Tandlianwala" />
+    <meta property="og:description" content="Tandlianwala's only registered institute for medical, paramedical and computer education. Admissions open for LHV, CNA, CMW, Pharmacy Technician, Medical Technology and Computer/IT courses." />
+    <meta property="og:url" content="https://www.gimstandlianwala.edu.pk/" />
+    <meta property="og:image" content="https://www.gimstandlianwala.edu.pk/images/logo-real.jpg" />
+    <meta property="og:locale" content="en_PK" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Global Institute of Medical Sciences & Computer College — Tandlianwala" />
+    <meta name="twitter:description" content="Tandlianwala's only registered institute for medical, paramedical and computer education. Admissions open for LHV, CNA, CMW, Pharmacy Technician, Medical Technology and Computer/IT courses." />
+    <meta name="twitter:image" content="https://www.gimstandlianwala.edu.pk/images/logo-real.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gims-theme-dark.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Global Institute of Medical Sciences & Computer College",
+      "url": "https://www.gimstandlianwala.edu.pk/",
+      "logo": "https://www.gimstandlianwala.edu.pk/images/logo-real.jpg",
+      "image": "https://www.gimstandlianwala.edu.pk/images/logo-real.jpg",
+      "description": "Registered institute for medical, paramedical and computer education in Tandlianwala, Punjab, Pakistan.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Canal Road, Near Cricket Stadium",
+        "addressLocality": "Tandlianwala",
+        "addressRegion": "Punjab",
+        "addressCountry": "PK"
+      },
+      "telephone": "+92-300-6651431",
+      "email": "globalimstandlianwala@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61558160542675",
+        "https://instagram.com/Global%20Medical%20College%20Tandlianwala",
+        "https://www.tiktok.com/@global_medical_clg_tndla"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <span class="pl-mark">Global Institute</span>
+      <span class="pl-bar"></span>
+    </div>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="ecg-strip">
+        <div class="marquee">
+          GLOBAL INSTITUTE OF MEDICAL SCIENCES & COMPUTER COLLEGE • TANDLIANWALA
+          • ADMISSIONS OPEN 2026-2028 • GLOBAL INSTITUTE OF MEDICAL SCIENCES &
+          COMPUTER COLLEGE • TANDLIANWALA • ADMISSIONS OPEN 2026-2028 •
+        </div>
+      </div>
+      <div class="header-inner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo-real.jpg"
+            alt="Global Institute of Medical Sciences logo"
+            width="44"
+            height="44"
+          />
+          <span class="logo-text">
+            <span class="name">Global Institute of Medical Sciences</span>
+            <span class="place"
+              >Tandlianwala &middot; Medical &amp; Computer College</span
+            >
+          </span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="admission.html">Admission</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button
+          type="button"
+          class="gims-theme-toggle"
+          id="gimsThemeToggle"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <span class="gims-theme-toggle-ic" aria-hidden="true">🌙</span>
+        </button>
+        <a href="admission.html" class="btn btn-primary btn-sm header-cta"
+          >Apply Now</a
+        >
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <span class="hero-glow" aria-hidden="true"></span>
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            Tandlianwala's only registered medical & Computer institute
+          </div>
+          <h1 data-split-words>Train for a career that keeps this town healthy.</h1>
+          <p class="lede">
+            Global Institute of Medical Sciences provides quality education and
+            practical training for nurses, midwives, lab technicians, pharmacy
+            staff, and computer professionals through qualified faculty, modern
+            learning facilities, and a strong commitment to 100% result success
+            record.
+          </p>
+          <div class="hero-ctas">
+            <a
+              href="admission.html"
+              class="btn btn-primary gims-shine-btn"
+              >Start Your Application</a
+            >
+            <a href="programs.html" class="btn btn-outline gims-hover-btn"
+              >Explore Programs</a
+            >
+          </div>
+          <div class="hero-badge-row">
+            <span class="hero-badge"
+              ><span class="dot"></span> Pakistan Nursing &amp; Midwifery
+              Council</span
+            >
+            <span class="hero-badge"
+              ><span class="dot"></span> Punjab Pharmacy Council</span
+            >
+            <span class="hero-badge"
+              ><span class="dot"></span> Punjab Medical Faculty</span
+            >
+          </div>
+        </div>
+        <div class="stage">
+  <svg class="badge-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="bgCircle" cx="35%" cy="25%" r="80%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="60%" stop-color="#EAF4FF" />
+        <stop offset="100%" stop-color="#CFE4FA" />
+      </radialGradient>
+      <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#2E8CFF" />
+        <stop offset="100%" stop-color="#0B3E8F" />
+      </linearGradient>
+      <linearGradient id="coatGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="100%" stop-color="#E4EFFB" />
+      </linearGradient>
+      <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FBD9BB" />
+        <stop offset="100%" stop-color="#EFC1A0" />
+      </linearGradient>
+      <linearGradient id="scrubShadow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#D6E7FA" />
+        <stop offset="100%" stop-color="#B9D6F3" />
+      </linearGradient>
+      <linearGradient id="crossGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#2E8CFF" />
+        <stop offset="100%" stop-color="#0B3E8F" />
+      </linearGradient>
+      <linearGradient id="laptopGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#1E63C9" />
+        <stop offset="100%" stop-color="#0B3E8F" />
+      </linearGradient>
+      <radialGradient id="softShadow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#0B3E8F" stop-opacity=".18" />
+        <stop offset="100%" stop-color="#0B3E8F" stop-opacity="0" />
+      </radialGradient>
+      <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="4" result="b" />
+        <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+      </filter>
+      <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="180%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0B3E8F" flood-opacity="0.25"/>
+      </filter>
+      <clipPath id="circleClip">
+        <circle cx="240" cy="240" r="190" />
+      </clipPath>
+    </defs>
+ 
+    <!-- outer premium ring -->
+    <circle class="ring" cx="240" cy="240" r="222" fill="none" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="2 10" opacity=".55" />
+    <circle cx="240" cy="240" r="206" fill="none" stroke="#BFE0FF" stroke-width="1.5" opacity=".6" />
+ 
+    <!-- main badge circle -->
+    <circle cx="240" cy="240" r="190" fill="url(#bgCircle)" stroke="url(#ringGrad)" stroke-width="6" filter="url(#cardShadow)" />
+    <circle cx="240" cy="240" r="178" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8" />
+ 
+    <g clip-path="url(#circleClip)">
+      <ellipse cx="240" cy="440" rx="190" ry="60" fill="url(#softShadow)" />
+ 
+      <!-- ===== FULL DOCTOR FIGURE ===== -->
+      <g class="float">
+        <!-- body / coat -->
+        <path d="M140,400 C140,320 175,290 240,290 C305,290 340,320 340,400 L340,430 L140,430 Z"
+          fill="url(#coatGrad)" stroke="#B9D6F3" stroke-width="2" />
+        <!-- coat lapel -->
+        <path d="M240,292 L215,340 L240,330 L265,340 Z" fill="url(#scrubShadow)" />
+        <!-- scrub collar under coat -->
+        <path d="M212,300 C222,318 258,318 268,300 L260,296 C252,306 228,306 220,296 Z" fill="#2E8CFF" opacity=".85" />
+ 
+        <!-- neck -->
+        <rect x="222" y="255" width="36" height="40" rx="14" fill="url(#skinGrad)" />
+        <!-- head -->
+        <circle cx="240" cy="222" r="42" fill="url(#skinGrad)" />
+        <!-- hair -->
+        <path d="M198,214 C196,182 218,164 240,164 C264,164 284,182 282,214 C276,200 262,192 240,192 C218,192 204,200 198,214 Z" fill="#3B2A22" />
+        <!-- simple face -->
+        <circle cx="225" cy="222" r="3.4" fill="#0A2A4D" />
+        <circle cx="255" cy="222" r="3.4" fill="#0A2A4D" />
+        <path d="M226,240 C232,246 248,246 254,240" fill="none" stroke="#0A2A4D" stroke-width="2.4" stroke-linecap="round" />
+ 
+        <!-- head mirror band (classic doctor emblem, subtle) -->
+        <circle cx="240" cy="196" r="4" fill="#EAF4FF" stroke="#0B3E8F" stroke-width="1.4" />
+ 
+        <!-- stethoscope -->
+        <path d="M205,300 C200,340 210,360 232,364 C250,367 258,352 256,338"
+          fill="none" stroke="#0B3E8F" stroke-width="6" stroke-linecap="round" filter="url(#glow)" />
+        <path d="M275,300 C280,340 270,360 248,364"
+          fill="none" stroke="#0B3E8F" stroke-width="6" stroke-linecap="round" filter="url(#glow)" />
+        <circle cx="256" cy="340" r="10" fill="url(#laptopGrad)" stroke="#F7FBFF" stroke-width="2" />
+ 
+        <!-- coat cross badge -->
+        <g transform="translate(240,365)">
+          <circle r="16" fill="#FFFFFF" stroke="url(#crossGrad)" stroke-width="2.4" />
+          <rect x="-2.6" y="-9" width="5.2" height="18" rx="1.4" fill="url(#crossGrad)" />
+          <rect x="-9" y="-2.6" width="18" height="5.2" rx="1.4" fill="url(#crossGrad)" />
+        </g>
+      </g>
+    </g>
+ 
+    <!-- ===== ECG line arcing across the badge ===== -->
+    <g transform="translate(90,300)">
+      <polyline class="ecg"
+        points="0,40 26,40 40,40 52,10 66,74 80,20 94,40 300,40"
+        fill="none" stroke="#2E8CFF" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+      <circle class="pulse-dot" cx="66" cy="74" r="5" fill="#0B3E8F" />
+    </g>
+ 
+    <!-- ===== laptop / computer icon: "digital learning for students" ===== -->
+    <g transform="translate(150,395)">
+      <rect x="0" y="0" width="62" height="40" rx="4" fill="url(#laptopGrad)" stroke="#F7FBFF" stroke-width="2" />
+      <rect x="6" y="6" width="50" height="28" rx="2" fill="#EAF4FF" />
+      <path d="M46,10 C50,16 50,24 46,30" fill="none" stroke="#2E8CFF" stroke-width="2.4" stroke-linecap="round" />
+      <path d="M40,13 C43,17 43,23 40,27" fill="none" stroke="#2E8CFF" stroke-width="2" stroke-linecap="round" />
+      <rect x="-8" y="40" width="78" height="7" rx="3.5" fill="url(#laptopGrad)" />
+    </g>
+ 
+    <!-- badge label -->
+    <text x="240" y="460" text-anchor="middle" fill="#0B3E8F" font-family="-apple-system, 'Segoe UI', sans-serif"
+      font-size="13" letter-spacing="2" font-weight="600">MEDICAL &nbsp; · &nbsp; DIGITAL &nbsp; · &nbsp; STUDENT</text>
+  </svg>
+</div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST STRIP ================= -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="trust-strip">
+          <div class="trust-card">
+            <div class="seal">
+              <img
+                src="images/pnmc.png"
+                alt="Pakistan Nursing &amp; Midwifery Council seal"
+                width="300"
+                height="294"
+                loading="lazy"
+              />
+            </div>
+            <h4>Pakistan Nursing &amp; Midwifery Council</h4>
+            <div class="lic-no">PNMC No. F-11-INST-2025/16-214(a)</div>
+          </div>
+          <div class="trust-card">
+            <div class="seal">
+              <img
+                src="images/pharmacy-council.png"
+                alt="Punjab Pharmacy Council seal"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+            <h4>Punjab Pharmacy Council, Lahore</h4>
+            <div class="lic-no">F. No. 2-176/2023-PCP</div>
+          </div>
+          <div class="trust-card">
+            <div class="seal">
+              <img src="images/pmf.png" alt="Punjab Medical Faculty seal" width="257" height="277" loading="lazy" />
+            </div>
+            <h4>Punjab Medical Faculty, Lahore</h4>
+            <div class="lic-no">Reg. No. 174388-PMF</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIRECTOR / MISSION ================= -->
+    <section class="section section-alt">
+      <div class="container director-grid">
+        <div class="gims-director-card">
+          <img
+            class="director-photo"
+            src="images/director.jpg"
+            alt="Mian Muhammad Waqas, Director, Global Institute of Medical Sciences"
+            width="1080"
+            height="1440"
+            loading="lazy"
+          />
+          <span class="gims-director-accent" aria-hidden="true">✦</span>
+        </div>
+        <div>
+          <div class="eyebrow">Message from the director</div>
+          <p class="director-quote">
+            "Education and hands-on hospital training, together — that is how we
+            prepare our students for a real career in health care."
+          </p>
+          <div class="director-name">Mian Muhammad Waqas</div>
+          <div class="director-title">
+            Director, Global Institute of Medical Sciences
+          </div>
+          <div class="mv-grid">
+            <div class="mv-card">
+              <h4>Our Mission</h4>
+              <p>
+                To provide affordable, council-approved medical and computer
+                education to the students of Tandlianwala and nearby areas,
+                backed by qualified doctors and hospital-based practical
+                training.
+              </p>
+            </div>
+            <div class="mv-card">
+              <h4>Our Vision</h4>
+              <p>
+                To be the region's most trusted name in health-sciences and IT
+                education, sending well-trained nurses, midwives, technicians
+                and computer professionals into the workforce.
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 20px">
+            <a href="about.html" class="btn btn-outline btn-sm"
+              >Meet Our Director &amp; Full Story →</a
+            >
+            <a href="tel:+923006651431" class="gims-director-contact">
+              <span class="ic" aria-hidden="true">📞</span>
+              Call Director: 0300-6651431
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="justify-content: center">
+            Why choose us
+          </div>
+          <h2>Built for students who want a real, working career</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 12l5 5L20 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h4>100% Result Success</h4>
+            <p>
+              A strong, consistent record of student success in council
+              examinations.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h4>Hospital Training</h4>
+            <p>
+              Practical training and clinical exposure alongside classroom
+              study.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <circle
+                  cx="12"
+                  cy="8"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </div>
+            <h4>Qualified Faculty</h4>
+            <p>
+              Qualified doctors and experienced para-medical staff teaching
+              every program.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3v18M5 8h5.5a2.5 2.5 0 010 5H8a2.5 2.5 0 000 5h6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h4>Affordable Fee Packages</h4>
+            <p>
+              Concessional fee packages, plus free coaching classes for
+              matric-passed students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRAMS PREVIEW ================= -->
+    <section class="section section-navy">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="justify-content: center">
+            Admissions open · Batch 2026–2028
+          </div>
+          <h2>Choose your program</h2>
+          <p>
+            Three council-approved medical streams built around real hospital
+            practice, plus practical computer &amp; IT courses open to any
+            Matric background.
+          </p>
+        </div>
+        <div class="program-grid">
+          <div class="gims-flip-card" tabindex="0" aria-label="Nursing & Midwifery programs — press Enter to flip for details">
+            <div class="gims-flip-card-inner">
+              <div class="gims-flip-card-front">
+                <span class="cat-tag">Nursing &amp; Midwifery</span>
+                <h3>CNA · CMW · LHV</h3>
+                <span class="dur">2 Years</span>
+                <button
+                  type="button"
+                  class="gims-flip-toggle"
+                  aria-label="Show eligibility and details for Nursing & Midwifery programs"
+                >
+                  View details
+                </button>
+              </div>
+              <div class="gims-flip-card-back">
+                <div>
+                  <h4>CNA · CMW · LHV</h4>
+                  <p>
+                    Certified Nursing Assistant, Community Midwife and Lady
+                    Health Visitor — approved by the Pakistan Nursing &amp;
+                    Midwifery Council and Punjab Medical Faculty.
+                  </p>
+                  <div class="gims-flip-meta">Eligibility: Matric, 40–45% marks</div>
+                  <div class="gims-flip-meta">Age limit: 35–40 years</div>
+                </div>
+                <a class="card-link" href="programs.html#nursing">View full details →</a>
+                <button type="button" class="gims-flip-toggle" aria-label="Hide details">
+                  ← Back
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gims-flip-card" tabindex="0" aria-label="Pharmacy programs — press Enter to flip for details">
+            <div class="gims-flip-card-inner">
+              <div class="gims-flip-card-front">
+                <span class="cat-tag">Pharmacy</span>
+                <h3>Pharmacy Technician · Dispenser</h3>
+                <span class="dur">2 Years</span>
+                <button
+                  type="button"
+                  class="gims-flip-toggle"
+                  aria-label="Show eligibility and details for Pharmacy programs"
+                >
+                  View details
+                </button>
+              </div>
+              <div class="gims-flip-card-back">
+                <div>
+                  <h4>Pharmacy Technician · Dispenser</h4>
+                  <p>
+                    Approved by the Punjab Pharmacy Council, Lahore — a direct
+                    route to your own medical store.
+                  </p>
+                  <div class="gims-flip-meta">Eligibility: Matric (Science), 45% marks</div>
+                  <div class="gims-flip-meta">Age limit: 35 years</div>
+                </div>
+                <a class="card-link" href="programs.html#pharmacy">View full details →</a>
+                <button type="button" class="gims-flip-toggle" aria-label="Hide details">
+                  ← Back
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gims-flip-card" tabindex="0" aria-label="Medical Technology programs — press Enter to flip for details">
+            <div class="gims-flip-card-inner">
+              <div class="gims-flip-card-front">
+                <span class="cat-tag">Medical Technology</span>
+                <h3>RIT · MLT · OTT</h3>
+                <span class="dur">2 Years</span>
+                <button
+                  type="button"
+                  class="gims-flip-toggle"
+                  aria-label="Show eligibility and details for Medical Technology programs"
+                >
+                  View details
+                </button>
+              </div>
+              <div class="gims-flip-card-back">
+                <div>
+                  <h4>RIT · MLT · OTT</h4>
+                  <p>
+                    X-Ray, Medical Lab and Operation Theatre Technician
+                    diplomas, approved by the Punjab Medical Faculty.
+                  </p>
+                  <div class="gims-flip-meta">Eligibility: Matric Science or F.Sc, 45% marks</div>
+                  <div class="gims-flip-meta">Age limit: 35 years</div>
+                </div>
+                <a class="card-link" href="programs.html#medtech">View full details →</a>
+                <button type="button" class="gims-flip-toggle" aria-label="Hide details">
+                  ← Back
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gims-flip-card" tabindex="0" aria-label="Computer & IT courses — press Enter to flip for details">
+            <div class="gims-flip-card-inner">
+              <div class="gims-flip-card-front">
+                <span class="cat-tag">Computer &amp; IT</span>
+                <h3>Basic Computer · Graphic Design · Web Dev · AI &amp; more</h3>
+                <span class="dur">3 Months – 1 Year</span>
+                <button
+                  type="button"
+                  class="gims-flip-toggle"
+                  aria-label="Show eligibility and details for Computer & IT courses"
+                >
+                  View details
+                </button>
+              </div>
+              <div class="gims-flip-card-back">
+                <div>
+                  <h4>Computer &amp; IT Courses</h4>
+                  <p>
+                    Short-course computer training open to any Matric
+                    background — no science subjects required.
+                  </p>
+                  <div class="gims-flip-meta">Eligibility: Matric (any group)</div>
+                  <div class="gims-flip-meta">No minimum percentage</div>
+                </div>
+                <a class="card-link" href="programs.html#computer">View full details →</a>
+                <button type="button" class="gims-flip-toggle" aria-label="Hide details">
+                  ← Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 28px">
+          <a href="programs.html" class="btn btn-outline gims-hover-btn"
+            >View All Programs</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="justify-content: center">Questions</div>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">
+              Can Federal Board students apply? <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Yes. Students who have passed F.A from the Federal Board
+                (Islamabad) can apply for Punjab Medical Faculty programs such
+                as LHV, on the F.A basis, alongside matric-based applicants.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              What documents do I need to apply? <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Matric-based applicants need their Matric Result Card, Matric
+                Certificate, CNIC/B-Form, Father's CNIC and passport-size
+                pictures. F.Sc/F.A-based applicants additionally submit their
+                F.Sc/F.A Result Card and Certificate. The Admission page shows
+                the exact list for your program.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Is there an age limit? <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Yes, and it varies by program — generally 35 years, and up to 40
+                years for the Community Midwife (CMW) program. The admission
+                form checks this automatically from your date of birth.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Do you offer hospital training? <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Yes. Every program includes hospital and clinical practical
+                training alongside classroom teaching, supervised by qualified
+                doctors and para-medical staff.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Is coaching available for matric-passed students?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Yes, free coaching classes are offered for students who have
+                recently completed their matric examinations.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              How do I submit my application? <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Fill in the online Admission form — it checks your eligibility
+                automatically. Once you review and confirm, your application is
+                sent straight to our admissions email and our team will contact
+                you on the phone/WhatsApp number you provide.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Do you also offer computer / IT courses?
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Yes — Basic Computer, Office Management, Graphic Designing, Web
+                Development, Digital Marketing &amp; SEO, Artificial
+                Intelligence, Freelancing and E-Commerce, in 3-month, 6-month
+                and 1-year batches. These are open to students from any Matric
+                background, including students free from Matric exams, with no
+                science-subject requirement.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Is the computer course admission form the same as the medical
+              form? <span class="plus">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                No — the Admission page has two separate tabs: one for Medical
+                &amp; Nursing programs (with the eligibility checker), and a
+                separate, simpler form for Computer &amp; IT courses. Pick the
+                tab that matches what you're applying for.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="section-tight section-alt">
+      <div class="container">
+        <div class="gims-glow-card" style="max-width: 720px; margin: 0 auto">
+          <div class="gims-glow-card-inner">
+            <h2 style="margin-bottom: 14px">Limited seats for Batch 2026–2028</h2>
+            <p style="color: var(--ink-soft); max-width: 52ch; margin: 0 auto 22px">
+              Start your application now — the form checks your eligibility
+              instantly and sends your details straight to our admissions team.
+            </p>
+            <a
+              href="admission.html"
+              class="btn btn-primary gims-shine-btn"
+              >Apply for Admission</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" id="contact-snippet">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <div class="f-logo">
+            <img
+              src="images/logo-real.jpg"
+              alt="Global Institute of Medical Sciences logo"
+              width="36"
+              height="36"
+            />
+            <span class="name"
+              >Global Institute of<br />Medical Sciences & Computer
+              College</span
+            >
+          </div>
+          <p>
+            Tandlianwala's only registered institute for medical &amp;
+            paramedical education. Council-approved programs with hospital-based
+            training.
+          </p>
+          <div class="social-row" style="justify-content: flex-start">
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on Facebook"
+              href="https://www.facebook.com/profile.php?id=61558160542675"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.7C16.4 3.66 15.4 3.57 14.24 3.57c-2.42 0-4.08 1.48-4.08 4.19V9.9H7.4V13h2.76v8h3.34z"
+                /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on Instagram"
+              href="https://instagram.com/Global%20Medical%20College%20Tandlianwala"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on TikTok"
+              href="https://www.tiktok.com/@global_medical_clg_tndla?_r=1&amp;_t=ZS-98BRpgxeo1"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16.5 2h-3v13.6a2.6 2.6 0 11-2.2-2.57V9.9a5.6 5.6 0 00-.4 0A5.6 5.6 0 1016.5 15.5V9.2a8.2 8.2 0 004.5 1.35V7.4a5.3 5.3 0 01-4.5-5.4z"
+                /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Chat with GIMS on WhatsApp"
+              href="https://wa.me/923126651341"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.7 14.3c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13 13 0 01-4.1-2.5 12.6 12.6 0 01-2.4-3.4c-.3-.6-.6-1.3-.6-2 0-.7.4-1.1.6-1.3l.5-.5c.2-.2.4-.3.6 0l1.1 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1 1.4 1.6 1.9.6.5 1.3.9 2 1.2.2.1.4.1.5-.1l.6-.8c.2-.2.4-.3.6-.1l1.6 1c.2.1.3.3.3.5 0 .2 0 .5-.1.7z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html#nursing">LHV / CNA / CMW</a></li>
+            <li><a href="programs.html#pharmacy">Pharmacy Technician</a></li>
+            <li><a href="programs.html#pharmacy">Dispenser</a></li>
+            <li><a href="programs.html#medtech">RIT / MLT / OTT</a></li>
+            <li>
+              <a href="programs.html#computer">Computer &amp; IT Courses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              📍 Global Institute of Medical Sciences & Computer College, Canal
+              Road, Near Cricket Stadium, Tandlianwala
+            </li>
+            <li>📞 0300-6651431</li>
+            <li>💬 WhatsApp: 0312-6651341</li>
+            <li>✉️ globalimstandlianwala@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© 2026 Global Institute of Medical Sciences & Computer College,
+          Tandlianwala. All rights reserved.</span
+        >
+        <span class="lic-nos"
+          >Approved by:PNMC F-11-INST-2025/16-214(a) · PCP 2-176/2023 · PMF
+          174388</span
+        >
+      </div>
+    </footer>
+
+    <nav class="gims-mobile-nav" aria-label="Mobile quick navigation">
+      <a href="index.html" data-page="index.html">
+        <span class="ic" aria-hidden="true">🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="programs.html" data-page="programs.html">
+        <span class="ic" aria-hidden="true">📚</span>
+        <span>Programs</span>
+      </a>
+      <a href="admission.html" class="gims-mobile-nav-cta" data-page="admission.html">
+        <span class="ic" aria-hidden="true">📝</span>
+        <span>Admission</span>
+      </a>
+      <a href="contact.html" data-page="contact.html">
+        <span class="ic" aria-hidden="true">📞</span>
+        <span>Contact</span>
+      </a>
+      <a href="about.html" data-page="about.html">
+        <span class="ic" aria-hidden="true">☰</span>
+        <span>More</span>
+      </a>
+    </nav>
+
+
+    <script src="js/data/programs.js"></script>
+    <script src="js/admission/formSubmit.js"></script>
+    <script src="js/admission/medicalAdmission.js"></script>
+    <script src="js/admission/computerAdmission.js"></script>
+    <script src="js/pages/contactForm.js"></script>
+    <script src="js/pages/programsPage.js"></script>
+    <script src="js/ui/nav.js"></script>
+    <script src="js/ui/faq.js"></script>
+    <script src="js/ui/theme.js"></script>
+    <script src="js/ui/mobileNav.js"></script>
+    <script src="js/ui/animations.js"></script>
+    <script src="js/ui/flipCards.js"></script>
+    <script src="js/ui/preloader.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

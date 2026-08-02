@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Applied before first paint to avoid a flash of the wrong
+      // theme. GIMS defaults to the standard white + blue theme;
+      // this only switches to dark if the visitor chose it before.
+      (function () {
+        try {
+          if (localStorage.getItem("gims-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>
+      Admission Form — Global Institute of Medical Sciences, Tandlianwala
+    </title>
+    <meta
+      name="description"
+      content="Apply online for LHV, CNA, CMW, Pharmacy Technician, Dispenser, RIT, MLT or OTT. Instant eligibility check, then your application is emailed straight to our admissions team."
+    />
+    <link rel="icon" href="images/logo-real.jpg" type="image/jpeg" />
+
+    <link rel="canonical" href="https://www.gimstandlianwala.edu.pk/admission.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Global Institute of Medical Sciences & Computer College" />
+    <meta property="og:title" content="Admission Form — Global Institute of Medical Sciences, Tandlianwala" />
+    <meta property="og:description" content="Apply online for LHV, CNA, CMW, Pharmacy Technician, Dispenser, RIT, MLT or OTT. Instant eligibility check, then your application is emailed straight to our admissions team." />
+    <meta property="og:url" content="https://www.gimstandlianwala.edu.pk/admission.html" />
+    <meta property="og:image" content="https://www.gimstandlianwala.edu.pk/images/logo-real.jpg" />
+    <meta property="og:locale" content="en_PK" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Admission Form — Global Institute of Medical Sciences, Tandlianwala" />
+    <meta name="twitter:description" content="Apply online for LHV, CNA, CMW, Pharmacy Technician, Dispenser, RIT, MLT or OTT. Instant eligibility check, then your application is emailed straight to our admissions team." />
+    <meta name="twitter:image" content="https://www.gimstandlianwala.edu.pk/images/logo-real.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gims-theme-dark.css" />
+  </head>
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <span class="pl-mark">Global Institute</span>
+      <span class="pl-bar"></span>
+    </div>
+    <header class="site-header">
+      <div class="ecg-strip">
+        <div class="marquee">
+          GLOBAL INSTITUTE OF MEDICAL SCIENCES & COMPUTER COLLEGE • TANDLIANWALA
+          • ADMISSIONS OPEN 2026-2028 • GLOBAL INSTITUTE OF MEDICAL SCIENCES &
+          COMPUTER COLLEGE • TANDLIANWALA • ADMISSIONS OPEN 2026-2028 •
+        </div>
+      </div>
+      <div class="header-inner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo-real.jpg"
+            alt="Global Institute of Medical Sciences logo"
+            width="44"
+            height="44"
+          />
+          <span class="logo-text">
+            <span class="name">Global Institute of Medical Sciences</span>
+            <span class="place"
+              >Tandlianwala &middot; Medical &amp; Computer College</span
+            >
+          </span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="admission.html" aria-current="page">Admission</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button
+          type="button"
+          class="gims-theme-toggle"
+          id="gimsThemeToggle"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <span class="gims-theme-toggle-ic" aria-hidden="true">🌙</span>
+        </button>
+        <a href="admission.html" class="btn btn-primary btn-sm header-cta"
+          >Apply Now</a
+        >
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Batch 2026–2028 · Limited seats</div>
+        <h1>Admission application</h1>
+        <p>
+          Choose Medical &amp; Nursing or Computer &amp; IT Courses below. Fill
+          in your details, review, then submit — it goes straight to our
+          admissions email and our team will reach out on the phone/WhatsApp
+          number you provide.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 10px">
+      <div class="container" style="max-width: 900px">
+        <!-- ================= SUCCESS PANEL ================= -->
+        <div
+          id="admissionSuccess"
+          class="form-card success-panel"
+          style="display: none"
+        >
+          <div class="ic">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 12l5 5L20 6"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h2>Application received</h2>
+          <p
+            style="color: var(--ink-soft); max-width: 46ch; margin: 0 auto 22px"
+          >
+            Thank you — your application details have been sent to our
+            admissions email. Our team will contact you soon on the phone or
+            WhatsApp number you provided.
+          </p>
+          <a href="index.html" class="btn btn-outline">Back to Home</a>
+        </div>
+
+        <!-- ================= TRACK TABS ================= -->
+        <div class="track-tabs" id="admissionTabs">
+          <button class="track-tab active" data-track="medical">
+            <span class="tt-ic"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z"
+                />
+                <path d="M9 12l2 2 4-4" /></svg
+            ></span>
+            <span
+              ><span class="tt-title">Medical &amp; Nursing Admission</span
+              ><br /><span class="tt-sub"
+                >With instant eligibility check</span
+              ></span
+            >
+          </button>
+          <button class="track-tab" data-track="computer">
+            <span class="tt-ic"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="4" width="18" height="13" rx="2" />
+                <path d="M8 21h8M12 17v4" /></svg
+            ></span>
+            <span
+              ><span class="tt-title">Computer &amp; IT Courses Admission</span
+              ><br /><span class="tt-sub"
+                >Open to any Matric background</span
+              ></span
+            >
+          </button>
+        </div>
+
+        <!-- ================= MEDICAL WIZARD ================= -->
+        <div class="track-panel active" id="medicalPanel">
+          <div id="admissionWizard">
+            <div class="stepper">
+              <div class="step active">
+                <div class="num">1</div>
+                <div class="label">Personal Info</div>
+              </div>
+              <div class="step">
+                <div class="num">2</div>
+                <div class="label">Academic &amp; Program</div>
+              </div>
+              <div class="step">
+                <div class="num">3</div>
+                <div class="label">Documents</div>
+              </div>
+              <div class="step">
+                <div class="num">4</div>
+                <div class="label">Review &amp; Submit</div>
+              </div>
+            </div>
+
+            <form
+              class="form-card"
+              id="admissionForm"
+              action="https://formsubmit.co/globalimstandlianwala@gmail.com"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <!-- FormSubmit configuration -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Admission Application — GIMS Tandlianwala"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" id="formNext" value="" />
+              <input
+                type="text"
+                name="_honey"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <!-- ===== STEP 1: PERSONAL INFO ===== -->
+              <div class="form-step active">
+                <h3>Personal information</h3>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="fullName">Student full name</label>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="cnic">CNIC / B-Form Number</label>
+                    <input
+                      type="text"
+                      id="cnic"
+                      name="CNIC Number"
+                      placeholder="XXXXX-XXXXXXX-X"
+                      maxlength="15"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="fatherName">Father's name</label>
+                    <input
+                      type="text"
+                      id="fatherName"
+                      name="Father Name"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="Date of Birth" required />
+                    <div class="hint">
+                      Age (auto-calculated): <strong id="ageOutput">—</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="Gender" required>
+                      <option value="">Select</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="Email" required />
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="phone">Phone / WhatsApp number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="Phone"
+                      placeholder="03XX-XXXXXXX"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="address">Home address</label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="Street Address"
+                    placeholder="House / street"
+                    required
+                  />
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="City" required />
+                  </div>
+                  <div class="field">
+                    <label for="district">District</label>
+                    <input type="text" id="district" name="District" required />
+                  </div>
+                </div>
+                <div class="form-nav">
+                  <span></span>
+                  <button type="button" class="btn btn-primary" data-next>
+                    Next: Academic &amp; Program →
+                  </button>
+                </div>
+              </div>
+
+              <!-- ===== STEP 2: ACADEMIC & PROGRAM ===== -->
+              <div class="form-step">
+                <h3>Academic details &amp; program</h3>
+                <div class="field">
+                  <label>Applying on the basis of</label>
+                  <div class="radio-group">
+                    <label class="radio-card"
+                      ><input
+                        type="radio"
+                        name="basis"
+                        value="matric"
+                        required
+                      />
+                      Matric</label
+                    >
+                    <label class="radio-card"
+                      ><input type="radio" name="basis" value="fsc" />
+                      F.Sc</label
+                    >
+                    <label class="radio-card"
+                      ><input type="radio" name="basis" value="fa" /> F.A
+                      (Federal Board)</label
+                    >
+                  </div>
+                  <div
+                    class="gims-alert gims-alert--info"
+                    id="faNotice"
+                    role="status"
+                    style="display: none; margin-top: 12px"
+                  >
+                    <span class="gims-alert-ic" aria-hidden="true">ℹ️</span>
+                    <div class="gims-alert-body"
+                      >Federal Board F.A students can apply for Punjab Medical
+                      Faculty programs such as LHV on this basis.</div
+                    >
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="marksObtained">Marks obtained</label>
+                    <input
+                      type="number"
+                      id="marksObtained"
+                      name="Marks Obtained"
+                      min="0"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="marksTotal">Total marks</label>
+                    <input
+                      type="number"
+                      id="marksTotal"
+                      name="Total Marks"
+                      min="1"
+                      required
+                    />
+                    <div class="hint">
+                      Percentage (auto-calculated):
+                      <strong id="percentOutput">—</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="programSelect"
+                    >Program you want to apply for</label
+                  >
+                  <select
+                    id="programSelect"
+                    name="Program Applied For"
+                    required
+                  >
+                    <option value="">Select a program</option>
+                  </select>
+                  <div class="hint">
+                    Only programs that accept your selected basis (Matric / F.Sc
+                    / F.A) are shown.
+                  </div>
+                </div>
+                <div id="eligibilityResult" aria-live="polite"></div>
+                <div class="form-nav">
+                  <button type="button" class="btn btn-outline" data-prev>
+                    ← Back
+                  </button>
+                  <button type="button" class="btn btn-primary" data-next>
+                    Next: Documents →
+                  </button>
+                </div>
+              </div>
+
+              <!-- ===== STEP 3: DOCUMENTS ===== -->
+              <div class="form-step">
+                <h3>Required documents</h3>
+                <p style="color: var(--ink-soft); font-size: 0.92rem">
+                  This checklist updates based on whether you're applying on
+                  Matric, F.Sc or F.A basis. You can attach scanned copies now,
+                  or bring the originals to campus — attachments here are
+                  optional.
+                </p>
+                <div class="doc-checklist" id="docChecklist"></div>
+                <div class="form-nav">
+                  <button type="button" class="btn btn-outline" data-prev>
+                    ← Back
+                  </button>
+                  <button type="button" class="btn btn-primary" data-next>
+                    Next: Review →
+                  </button>
+                </div>
+              </div>
+
+              <!-- ===== STEP 4: REVIEW & SUBMIT ===== -->
+              <div class="form-step">
+                <h3>Review your application</h3>
+                <table class="review-table" id="reviewTable"></table>
+                <div class="check-row">
+                  <input type="checkbox" id="termsCheck" required />
+                  <label for="termsCheck"
+                    >I confirm the information above is correct and understand
+                    that final admission is subject to document verification by
+                    Global Institute of Medical Sciences, Tandlianwala.</label
+                  >
+                </div>
+                <div class="form-nav">
+                  <button type="button" class="btn btn-outline" data-prev>
+                    ← Back
+                  </button>
+                  <button type="submit" id="submitBtn" class="submit-btn">
+                    Submit Application
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /medicalPanel -->
+
+        <!-- ================= COMPUTER & IT COURSES FORM ================= -->
+        <div class="track-panel" id="computerPanel">
+          <form
+            class="form-card"
+            id="computerAdmissionForm"
+            action="https://formsubmit.co/globalimstandlianwala@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Computer Course Application — GIMS Tandlianwala"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" id="computerFormNext" value="" />
+            <input
+              type="text"
+              name="_honey"
+              style="display: none"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
+            <h3>Computer &amp; IT course application</h3>
+            <div class="gims-alert gims-alert--info" style="margin-bottom: 22px">
+              <span class="gims-alert-ic" aria-hidden="true">ℹ️</span>
+              <div class="gims-alert-body"
+                >No science subjects or minimum percentage required — open to
+                Matric-passed and result-awaiting students of any group.</div
+              >
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="cStudentName">Student full name</label>
+                <input
+                  type="text"
+                  id="cStudentName"
+                  name="Full Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cCNIC">CNIC / B-Form Number</label>
+                <input
+                  type="text"
+                  id="cCNIC"
+                  name="CNIC Number"
+                  placeholder="XXXXX-XXXXXXX-X"
+                  maxlength="15"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cFatherName">Father's name</label>
+                <input
+                  type="text"
+                  id="cFatherName"
+                  name="Father Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cStudentEmail">Email address</label>
+                <input type="email" id="cStudentEmail" name="Email" required />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cStudentPhone">Phone / WhatsApp number</label>
+                <input
+                  type="tel"
+                  id="cStudentPhone"
+                  name="Phone"
+                  placeholder="03XX-XXXXXXX"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cCity">City</label>
+                <input type="text" id="cCity" name="City" required />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cQualification">Current qualification</label>
+                <select
+                  id="cQualification"
+                  name="Current Qualification"
+                  required
+                >
+                  <option value="">Select</option>
+                  <option>Matric (Passed)</option>
+                  <option>Matric (Result Awaiting)</option>
+                  <option>F.A / F.Sc</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cCourse">Course you want to join</label>
+                <select id="cCourse" name="Course Applied For" required>
+                  <option value="">Select a course</option>
+                  <option>Basic Computer (MS Office &amp; Typing)</option>
+                  <option>Office Management</option>
+                  <option>Graphic Designing</option>
+                  <option>Web Development</option>
+                  <option>Digital Marketing &amp; SEO</option>
+                  <option>Artificial Intelligence (AI)</option>
+                  <option>Freelancing</option>
+                  <option>E-Commerce</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cDuration">Preferred batch duration</label>
+                <select id="cDuration" name="Preferred Duration" required>
+                  <option value="">Select</option>
+                  <option>3 Months</option>
+                  <option>6 Months</option>
+                  <option>1 Year</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cNotes"
+                >Anything else we should know? (optional)</label
+              >
+              <textarea id="cNotes" name="Notes"></textarea>
+            </div>
+
+            <div class="field">
+              <label
+                >Documents (optional — CNIC/B-Form &amp; a passport size
+                picture)</label
+              >
+              <div class="doc-checklist">
+                <div class="doc-item">
+                  <span class="doc-name">CNIC / B-Form copy</span>
+                  <input type="file" name="CNIC / B-Form" />
+                </div>
+                <div class="doc-item">
+                  <span class="doc-name">Passport size picture</span>
+                  <input type="file" name="Passport Picture" />
+                </div>
+              </div>
+            </div>
+
+            <div class="check-row">
+              <input type="checkbox" id="cTermsCheck" required />
+              <label for="cTermsCheck"
+                >I confirm the information above is correct and understand that
+                final enrolment is subject to seat availability at Global
+                Institute of Medical Sciences &amp; Computer College,
+                Tandlianwala.</label
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary btn-block"
+              id="computerSubmitBtn"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+        <!-- /computerPanel -->
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <div class="f-logo">
+            <img
+              src="images/logo-real.jpg"
+              alt="Global Institute of Medical Sciences logo"
+              width="36"
+              height="36"
+            />
+            <span class="name"
+              >Global Institute of<br />Medical Sciences & Computer
+              College</span
+            >
+          </div>
+          <p>
+            Tandlianwala's only registered institute for medical &amp;
+            paramedical education. Council-approved programs with hospital-based
+            training.
+          </p>
+          <div class="social-row" style="justify-content: flex-start">
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on Facebook"
+              href="https://www.facebook.com/profile.php?id=61558160542675"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.7C16.4 3.66 15.4 3.57 14.24 3.57c-2.42 0-4.08 1.48-4.08 4.19V9.9H7.4V13h2.76v8h3.34z"
+                /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on Instagram"
+              href="https://instagram.com/Global%20Medical%20College%20Tandlianwala"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on TikTok"
+              href="https://www.tiktok.com/@global_medical_clg_tndla?_r=1&amp;_t=ZS-98BRpgxeo1"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16.5 2h-3v13.6a2.6 2.6 0 11-2.2-2.57V9.9a5.6 5.6 0 00-.4 0A5.6 5.6 0 1016.5 15.5V9.2a8.2 8.2 0 004.5 1.35V7.4a5.3 5.3 0 01-4.5-5.4z"
+                /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Chat with GIMS on WhatsApp"
+              href="https://wa.me/923126651341"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.7 14.3c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13 13 0 01-4.1-2.5 12.6 12.6 0 01-2.4-3.4c-.3-.6-.6-1.3-.6-2 0-.7.4-1.1.6-1.3l.5-.5c.2-.2.4-.3.6 0l1.1 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1 1.4 1.6 1.9.6.5 1.3.9 2 1.2.2.1.4.1.5-.1l.6-.8c.2-.2.4-.3.6-.1l1.6 1c.2.1.3.3.3.5 0 .2 0 .5-.1.7z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html#nursing">LHV / CNA / CMW</a></li>
+            <li><a href="programs.html#pharmacy">Pharmacy Technician</a></li>
+            <li><a href="programs.html#pharmacy">Dispenser</a></li>
+            <li><a href="programs.html#medtech">RIT / MLT / OTT</a></li>
+            <li>
+              <a href="programs.html#computer">Computer &amp; IT Courses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              📍 Global Institute of Medical Sciences & Computer College, Canal
+              Road, Near Cricket Stadium, Tandlianwala
+            </li>
+            <li>📞 0300-6651431</li>
+            <li>💬 WhatsApp: 0312-6651341</li>
+            <li>✉️ globalimstandlianwala@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© 2026 Global Institute of Medical Sciences & Computer College,
+          Tandlianwala. All rights reserved.</span
+        >
+        <span class="lic-nos"
+          >Approved by: PNMC F-11-INST-2025/16-214(a) · PCP 2-176/2023 · PMF
+          174388</span
+        >
+      </div>
+    </footer>
+
+    <nav class="gims-mobile-nav" aria-label="Mobile quick navigation">
+      <a href="index.html" data-page="index.html">
+        <span class="ic" aria-hidden="true">🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="programs.html" data-page="programs.html">
+        <span class="ic" aria-hidden="true">📚</span>
+        <span>Programs</span>
+      </a>
+      <a href="admission.html" class="gims-mobile-nav-cta" data-page="admission.html">
+        <span class="ic" aria-hidden="true">📝</span>
+        <span>Admission</span>
+      </a>
+      <a href="contact.html" data-page="contact.html">
+        <span class="ic" aria-hidden="true">📞</span>
+        <span>Contact</span>
+      </a>
+      <a href="about.html" data-page="about.html">
+        <span class="ic" aria-hidden="true">☰</span>
+        <span>More</span>
+      </a>
+    </nav>
+
+
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/data/programs.js"></script>
+    <script src="js/admission/formSubmit.js"></script>
+    <script src="js/admission/medicalAdmission.js"></script>
+    <script src="js/admission/computerAdmission.js"></script>
+    <script src="js/pages/contactForm.js"></script>
+    <script src="js/pages/programsPage.js"></script>
+    <script src="js/ui/nav.js"></script>
+    <script src="js/ui/faq.js"></script>
+    <script src="js/ui/theme.js"></script>
+    <script src="js/ui/mobileNav.js"></script>
+    <script src="js/ui/animations.js"></script>
+    <script src="js/ui/flipCards.js"></script>
+    <script src="js/ui/preloader.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // Point each FormSubmit form back to this page with a track-specific flag, then toggle the success panel.
+      var base = window.location.origin + window.location.pathname;
+      document.getElementById("formNext").value = base + "?submitted=medical";
+      document.getElementById("computerFormNext").value =
+        base + "?submitted=computer";
+
+      var submitted = new URLSearchParams(window.location.search).get(
+        "submitted",
+      );
+      if (submitted === "medical" || submitted === "computer") {
+        document.getElementById("admissionTabs").style.display = "none";
+        document.getElementById("medicalPanel").style.display = "none";
+        document.getElementById("computerPanel").style.display = "none";
+        document.getElementById("admissionSuccess").style.display = "block";
+        if (submitted === "computer") {
+          document.querySelector("#admissionSuccess h2").textContent =
+            "Application received";
+          document.querySelector("#admissionSuccess p").textContent =
+            "Thank you — your computer course application has been sent to our admissions email. Our team will contact you soon on the phone or WhatsApp number you provided.";
+        }
+      }
+    </script>
+  </body>
+</html>

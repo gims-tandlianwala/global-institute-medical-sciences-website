@@ -1,0 +1,78 @@
+/* ============================================================
+   GIMS — Dark theme
+   Applied when <html data-theme="dark">. Overrides only the
+   surface + text tokens (--navy is also lightened, since it is
+   the site's primary heading color) — all existing "solid navy
+   panel" backgrounds (footer, tooltips, filled buttons, the
+   flip-card back, etc.) were switched to --navy-surface in the
+   base stylesheet precisely so this file can lighten --navy for
+   heading contrast without breaking those panels. Brand accents
+   (--teal, --red, --gold) are intentionally left close to their
+   light-mode values — they are already mid-toned blues that read
+   fine on a dark surface, and changing them would touch far more
+   selectors than a low-risk pass justifies.
+   ============================================================ */
+html[data-theme="dark"] {
+  --navy: #8fb8f7;
+  --navy-surface: #0a3d8f;
+  --teal-light: #142a44;
+  --cream: #0b1626;
+  --paper: #101f36;
+  --ink: #e7eefb;
+  --ink-soft: #a9bfdc;
+  --line: #24395c;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* The header uses a hardcoded cream tint (not the --cream token,
+   since it needs transparency for the blur), so it needs its own
+   dark-mode value. */
+html[data-theme="dark"] .site-header {
+  background: rgba(11, 22, 38, 0.86);
+}
+
+/* Alert variants use light pastel backgrounds in light mode —
+   swap to low-opacity tints so text stays readable on dark. */
+html[data-theme="dark"] .gims-alert--success {
+  background: rgba(31, 138, 76, 0.16);
+  color: #a8e6c1;
+}
+html[data-theme="dark"] .gims-alert--warning {
+  background: rgba(217, 178, 92, 0.14);
+  color: #f0d391;
+}
+html[data-theme="dark"] .gims-alert--error {
+  background: rgba(178, 58, 46, 0.18);
+  color: #f5b3ab;
+}
+html[data-theme="dark"] .gims-alert-ic {
+  background: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .gims-alert .gims-alert-body strong {
+  color: #dce8fb;
+}
+
+/* Trust/council seal chips keep a white badge in light mode for
+   the logo images to sit on — keep that white circle even in
+   dark mode so the seal artwork itself isn't recolored. */
+html[data-theme="dark"] .trust-card .seal {
+  background: #16283f;
+}
+
+/* Hero background gradient + illustration panel are intentionally
+   left in their light, brochure-style rendering in dark mode: the
+   hero SVG is hand-drawn illustration art (skin tones, coat, etc.)
+   that isn't theme-token driven, so inverting only the wrapper
+   behind it would look broken. It reads as a deliberate "light
+   card floating on a dark page" moment, which is a common and
+   acceptable dark-mode pattern for illustration-heavy hero art. */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    transition: background-color 0.25s ease;
+  }
+  body {
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}

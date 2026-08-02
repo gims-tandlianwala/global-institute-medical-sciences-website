@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Applied before first paint to avoid a flash of the wrong
+      // theme. GIMS defaults to the standard white + blue theme;
+      // this only switches to dark if the visitor chose it before.
+      (function () {
+        try {
+          if (localStorage.getItem("gims-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>About Us — Global Institute of Medical Sciences, Tandlianwala</title>
+    <meta
+      name="description"
+      content="Meet our director, our mission and vision, and the councils that approve Global Institute of Medical Sciences & Computer College, Tandlianwala."
+    />
+    <link rel="icon" href="images/logo-real.jpg" type="image/jpeg" />
+
+    <link rel="canonical" href="https://www.gimstandlianwala.edu.pk/about.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Global Institute of Medical Sciences & Computer College" />
+    <meta property="og:title" content="About Us — Global Institute of Medical Sciences, Tandlianwala" />
+    <meta property="og:description" content="Meet our director, our mission and vision, and the councils that approve Global Institute of Medical Sciences & Computer College, Tandlianwala." />
+    <meta property="og:url" content="https://www.gimstandlianwala.edu.pk/about.html" />
+    <meta property="og:image" content="https://www.gimstandlianwala.edu.pk/images/logo-real.jpg" />
+    <meta property="og:locale" content="en_PK" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Us — Global Institute of Medical Sciences, Tandlianwala" />
+    <meta name="twitter:description" content="Meet our director, our mission and vision, and the councils that approve Global Institute of Medical Sciences & Computer College, Tandlianwala." />
+    <meta name="twitter:image" content="https://www.gimstandlianwala.edu.pk/images/logo-real.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gims-theme-dark.css" />
+  </head>
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <span class="pl-mark">Global Institute</span>
+      <span class="pl-bar"></span>
+    </div>
+    <header class="site-header">
+      <div class="ecg-strip">
+        <div class="marquee">
+          GLOBAL INSTITUTE OF MEDICAL SCIENCES & COMPUTER COLLEGE • TANDLIANWALA
+          • ADMISSIONS OPEN 2026-2028 • GLOBAL INSTITUTE OF MEDICAL SCIENCES &
+          COMPUTER COLLEGE • TANDLIANWALA • ADMISSIONS OPEN 2026-2028 •
+        </div>
+      </div>
+      <div class="header-inner">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo-real.jpg"
+            alt="Global Institute of Medical Sciences logo"
+            width="44"
+            height="44"
+          />
+          <span class="logo-text">
+            <span class="name">Global Institute of Medical Sciences</span>
+            <span class="place"
+              >Tandlianwala &middot; Medical &amp; Computer College</span
+            >
+          </span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="admission.html">Admission</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button
+          type="button"
+          class="gims-theme-toggle"
+          id="gimsThemeToggle"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <span class="gims-theme-toggle-ic" aria-hidden="true">🌙</span>
+        </button>
+        <a href="admission.html" class="btn btn-primary btn-sm header-cta"
+          >Apply Now</a
+        >
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">About the institute</div>
+        <h1>Tandlianwala's only registered medical &amp; computer college</h1>
+        <p>
+          Council-approved diplomas, hospital-based training, and practical
+          computer courses — all under one roof, led by a director committed to
+          this town's students.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= DIRECTOR (FULL) ================= -->
+    <section class="section" style="padding-top: 10px">
+      <div class="container director-grid">
+        <div class="gims-director-card">
+          <img
+            class="director-photo"
+            src="images/director.jpg"
+            alt="Mian Muhammad Waqas, Director, Global Institute of Medical Sciences, at his office desk"
+            width="1080"
+            height="1440"
+            loading="lazy"
+          />
+          <span class="gims-director-accent" aria-hidden="true">✦</span>
+        </div>
+        <div>
+          <div class="eyebrow">Director's message</div>
+          <p class="director-quote">
+            "Education and hands-on hospital training, together — that is how we
+            prepare our students for a real career in health care and
+            technology."
+          </p>
+          <div class="director-name">Mian Muhammad Waqas</div>
+          <div class="director-title">
+            Director, Global Institute of Medical Sciences &amp; Computer
+            College
+          </div>
+          <p style="margin-top: 18px; color: var(--ink-soft)">
+            Mian Muhammad Waqas founded Global Institute of Medical Sciences &
+            Computer College to give the students of Tandlianwala access to
+            council-approved medical, nursing and computer education without
+            having to travel to a big city. Under his leadership the institute
+            has built a track record of strong exam results, hands-on hospital
+            training partnerships, and affordable fee packages — including free
+            coaching classes for matric-passed and result-awaiting students.
+          </p>
+          <p style="color: var(--ink-soft)">
+            For any question about admissions, fee packages or programs, you can
+            reach the director's office directly at any time Mon-to-Sat on 9:00
+            A.M to 5:00 P.M and for more information Contact on these Numbers
+            <strong>0300-6651431</strong> or on WhatsApp at
+            <strong>0312-6651341</strong>.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px">
+            <a href="tel:+923006651431" class="gims-director-contact">
+              <span class="ic" aria-hidden="true">📞</span>
+              Call Director: 0300-6651431
+            </a>
+            <a href="https://wa.me/923126651341" class="gims-director-contact" target="_blank" rel="noopener">
+              <span class="ic" aria-hidden="true">💬</span>
+              WhatsApp: 0312-6651341
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MISSION / VISION ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="justify-content: center">
+            What drives us
+          </div>
+          <h2>Mission &amp; vision</h2>
+        </div>
+        <div class="mv-grid" style="max-width: 900px; margin: 0 auto">
+          <div class="mv-card">
+            <h4>Our Mission</h4>
+            <p>
+              To provide affordable, council-approved medical, nursing and
+              computer education to the students of Tandlianwala and nearby
+              areas — backed by qualified doctors, experienced paramedical
+              staff, and hospital-based practical training.
+            </p>
+          </div>
+          <div class="mv-card">
+            <h4>Our Vision</h4>
+            <p>
+              To be the region's most trusted name in health-sciences and IT
+              education, sending well-trained nurses, midwives, technicians and
+              computer professionals into hospitals, clinics and workplaces
+              across Punjab.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FACILITIES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="justify-content: center">
+            Special facilities
+          </div>
+          <h2>What sets our campus apart</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 3h6v4l4 12H5L9 7V3z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h4>Modern Medical Lab</h4>
+            <p>
+              A fully equipped medical laboratory for hands-on diagnostic
+              practice.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <circle
+                  cx="12"
+                  cy="8"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </div>
+            <h4>Qualified Doctors &amp; Staff</h4>
+            <p>
+              Qualified doctors and experienced paramedical staff teach every
+              medical program.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h4>Hospital Training</h4>
+            <p>
+              Real hospital and clinical practical training alongside classroom
+              study.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <rect
+                  x="3"
+                  y="4"
+                  width="18"
+                  height="13"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M8 21h8M12 17v4"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </div>
+            <h4>Computer Labs</h4>
+            <p>
+              Dedicated computer labs for all Computer &amp; IT short courses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LICENSES / APPROVALS (DETAIL) ================= -->
+    <section class="section section-navy">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="justify-content: center">
+            Approved &amp; registered
+          </div>
+          <h2>Our approvals, in detail</h2>
+          <p>
+            Tandlianwala's only registered institute — every medical program is
+            approved by a recognised council.
+          </p>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-card">
+            <div class="seal">
+              <img
+                src="images/pnmc.png"
+                alt="Pakistan Nursing &amp; Midwifery Council seal"
+                width="300"
+                height="294"
+                loading="lazy"
+              />
+            </div>
+            <h4>Pakistan Nursing &amp; Midwifery Council, Islamabad</h4>
+            <div class="lic-no">PNMC No. F-11-INST-2025/16-214(a)</div>
+            <p style="margin-top: 10px; font-size: 0.85rem">
+              Approves our CNA, CMW and LHV nursing &amp; midwifery programs.
+            </p>
+          </div>
+          <div class="trust-card">
+            <div class="seal">
+              <img
+                src="images/pharmacy-council.png"
+                alt="Punjab Pharmacy Council seal"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+            <h4>Punjab Pharmacy Council, Lahore</h4>
+            <div class="lic-no">F. No. 2-176/2023-PCP</div>
+            <p style="margin-top: 10px; font-size: 0.85rem">
+              Approves our Pharmacy Technician (Category-B) and Dispenser
+              diplomas.
+            </p>
+          </div>
+          <div class="trust-card">
+            <div class="seal">
+              <img src="images/pmf.png" alt="Punjab Medical Faculty seal" width="257" height="277" loading="lazy" />
+            </div>
+            <h4>Punjab Medical Faculty, Lahore</h4>
+            <div class="lic-no">Reg. No. 174388-PMF</div>
+            <p style="margin-top: 10px; font-size: 0.85rem">
+              Approves our RIT, MLT, OTT, DISP and LHV diplomas
+              (F.Sc-equivalent).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight section-alt">
+      <div class="container" style="text-align: center">
+        <h2 style="margin-bottom: 14px">Ready to join us?</h2>
+        <p style="color: var(--ink-soft); max-width: 52ch; margin: 0 auto 22px">
+          Browse every program in detail, or go straight to the admission form.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="programs.html" class="btn btn-outline">View Programs</a>
+          <a href="admission.html" class="btn btn-primary"
+            >Apply for Admission</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <div class="f-logo">
+            <img
+              src="images/logo-real.jpg"
+              alt="Global Institute of Medical Sciences logo"
+              width="36"
+              height="36"
+            />
+            <span class="name"
+              >Global Institute of<br />Medical Sciences & Computer
+              College</span
+            >
+          </div>
+          <p>
+            Tandlianwala's only registered institute for medical, paramedical
+            &amp; computer education. Council-approved programs with
+            hospital-based training.
+          </p>
+          <div class="social-row" style="justify-content: flex-start">
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on Facebook"
+              href="https://www.facebook.com/profile.php?id=61558160542675"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.7C16.4 3.66 15.4 3.57 14.24 3.57c-2.42 0-4.08 1.48-4.08 4.19V9.9H7.4V13h2.76v8h3.34z"
+                /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on Instagram"
+              href="https://instagram.com/Global%20Medical%20College%20Tandlianwala"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Follow GIMS on TikTok"
+              href="https://www.tiktok.com/@global_medical_clg_tndla?_r=1&amp;_t=ZS-98BRpgxeo1"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16.5 2h-3v13.6a2.6 2.6 0 11-2.2-2.57V9.9a5.6 5.6 0 00-.4 0A5.6 5.6 0 1016.5 15.5V9.2a8.2 8.2 0 004.5 1.35V7.4a5.3 5.3 0 01-4.5-5.4z"
+                /></svg
+            ></a>
+            <a
+              class="social-btn gims-social-tooltip" data-tooltip="Chat with GIMS on WhatsApp"
+              href="https://wa.me/923126651341"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.7 14.3c-.2.6-1.4 1.2-1.9 1.2-.5.1-1.1.1-1.8-.1a13 13 0 01-4.1-2.5 12.6 12.6 0 01-2.4-3.4c-.3-.6-.6-1.3-.6-2 0-.7.4-1.1.6-1.3l.5-.5c.2-.2.4-.3.6 0l1.1 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1 1.4 1.6 1.9.6.5 1.3.9 2 1.2.2.1.4.1.5-.1l.6-.8c.2-.2.4-.3.6-.1l1.6 1c.2.1.3.3.3.5 0 .2 0 .5-.1.7z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html#nursing">LHV / CNA / CMW</a></li>
+            <li><a href="programs.html#pharmacy">Pharmacy Technician</a></li>
+            <li><a href="programs.html#pharmacy">Dispenser</a></li>
+            <li><a href="programs.html#medtech">RIT / MLT / OTT</a></li>
+            <li>
+              <a href="programs.html#computer">Computer &amp; IT Courses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              📍 Global Institute of Medical Sciences & Computer College, Canal
+              Road, Near Cricket Stadium, Tandlianwala
+            </li>
+            <li>📞 0300-6651431</li>
+            <li>💬 WhatsApp: 0312-6651341</li>
+            <li>✉️ globalimstandlianwala@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© 2026 Global Institute of Medical Sciences & Computer College,
+          Tandlianwala. All rights reserved.</span
+        >
+        <span class="lic-nos"
+          >Approved by: PNMC F-11-INST-2025/16-214(a) · PCP 2-176/2023 · PMF
+          174388</span
+        >
+      </div>
+    </footer>
+
+    <nav class="gims-mobile-nav" aria-label="Mobile quick navigation">
+      <a href="index.html" data-page="index.html">
+        <span class="ic" aria-hidden="true">🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="programs.html" data-page="programs.html">
+        <span class="ic" aria-hidden="true">📚</span>
+        <span>Programs</span>
+      </a>
+      <a href="admission.html" class="gims-mobile-nav-cta" data-page="admission.html">
+        <span class="ic" aria-hidden="true">📝</span>
+        <span>Admission</span>
+      </a>
+      <a href="contact.html" data-page="contact.html">
+        <span class="ic" aria-hidden="true">📞</span>
+        <span>Contact</span>
+      </a>
+      <a href="about.html" data-page="about.html">
+        <span class="ic" aria-hidden="true">☰</span>
+        <span>More</span>
+      </a>
+    </nav>
+
+
+    <script src="js/data/programs.js"></script>
+    <script src="js/admission/formSubmit.js"></script>
+    <script src="js/admission/medicalAdmission.js"></script>
+    <script src="js/admission/computerAdmission.js"></script>
+    <script src="js/pages/contactForm.js"></script>
+    <script src="js/pages/programsPage.js"></script>
+    <script src="js/ui/nav.js"></script>
+    <script src="js/ui/faq.js"></script>
+    <script src="js/ui/theme.js"></script>
+    <script src="js/ui/mobileNav.js"></script>
+    <script src="js/ui/animations.js"></script>
+    <script src="js/ui/flipCards.js"></script>
+    <script src="js/ui/preloader.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
